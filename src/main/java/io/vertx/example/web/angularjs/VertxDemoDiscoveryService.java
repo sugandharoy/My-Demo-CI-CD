@@ -30,12 +30,7 @@ public class VertxDemoDiscoveryService extends AbstractVerticle {
 		Runner.runExample(VertxDemoDiscoveryService.class);
 	}
 	
-	
-	
-	
-	
-	
-//sugandha first commit
+	//sugandha test commit
 	private MongoClient mongo;
 
 	public static int DEFAULT_CLIENT_PORT = 9232;
