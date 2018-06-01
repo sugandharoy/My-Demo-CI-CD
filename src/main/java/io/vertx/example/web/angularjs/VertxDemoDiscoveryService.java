@@ -29,6 +29,12 @@ public class VertxDemoDiscoveryService extends AbstractVerticle {
 	public static void main(String[] args) {
 		Runner.runExample(VertxDemoDiscoveryService.class);
 	}
+	
+	
+	
+	
+	
+	
 
 	private MongoClient mongo;
 
