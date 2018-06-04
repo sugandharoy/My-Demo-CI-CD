@@ -8,7 +8,7 @@ WORKDIR pipeline/
 
 RUN mvn clean install
 
-EXPOSE 8090
+EXPOSE 9298
 
 
 

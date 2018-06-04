@@ -1,7 +1,7 @@
 def CONTAINER_NAME="jenkins-pipeline"
 def CONTAINER_TAG="latest"
-def DOCKER_HUB_USER="hakdogan"
-def HTTP_PORT="8090"
+def DOCKER_HUB_USER="incedodockerhub"
+def HTTP_PORT="9298"
 
 node {
 
