@@ -10,7 +10,8 @@ RUN mvn clean install
 
 EXPOSE 9298
 
+ENTRYPOINT [ "java", "-jar", "/pipeline/target/web-examples-3.5.1.jar"]
 
 
-ENTRYPOINT ["sh", "-c"]
-CMD ["exec java -jar "/pipeline/target/web-examples-3.5.1.jar"]
+
+
