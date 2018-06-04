@@ -1,17 +1,13 @@
-FROM openjdk:8-jre-alpine                                           
+FROM maven:3-alpine
 
-ENV VERTICLE_FILE web-examples-3.5.1.jar      
+COPY pom.xml pipeline/
 
-# Set the location of the verticles
-ENV VERTICLE_HOME c/Program Files/Docker Toolbox
+COPY src/ pipeline/src/
+
+WORKDIR pipeline/
+
+RUN mvn clean install
 
 EXPOSE 8090
 
-# Copy your fat jar to the container
-                       
-COPY $VERTICLE_FILE $VERTICLE_HOME/ 
-
-# Launch the verticle
-WORKDIR $VERTICLE_HOME
-ENTRYPOINT ["sh", "-c"]
-CMD ["exec java -jar $VERTICLE_FILE"]
+ENTRYPOINT [ "java", "-jar", "/pipeline/target/web-examples-3.5.1.jar"]
