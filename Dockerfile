@@ -8,7 +8,7 @@ ENV VERTICLE_HOME C:\Users\sugandha\git\My-Demo-CI-CD
 EXPOSE 9298
 
 # Copy your fat jar to the container
-COPY $VERTICLE_FILE $VERTICLE_HOME/                         
+                       
 
 # Launch the verticle
 WORKDIR $VERTICLE_HOME
