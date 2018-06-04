@@ -3,7 +3,7 @@ FROM openjdk:8-jre-alpine
 ENV VERTICLE_FILE web-examples-3.5.1.jar      
 
 # Set the location of the verticles
-ENV VERTICLE_HOME c/Program Files/Docker Toolbox
+ENV VERTICLE_HOME C:\Users\sugandha\git\My-Demo-CI-CD
 
 EXPOSE 9298
 
