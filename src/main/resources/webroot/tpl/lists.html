@@ -1,0 +1,43 @@
+<html>
+<head>
+<style>
+body {
+    background-color: lightblue;
+}
+h2{
+ color: white;
+    text-align: center;
+    }
+
+a {
+    font-family: verdana;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+ 
+}
+
+</style>
+</head>
+<h2>Discovered Device</h2>
+<table  class="table table-condensed">
+    <thead>
+    <tr>
+     <th>Discovered TofinoID</th>
+      <th>HostName</th>
+        <th>StartIP</th>
+        <th>EndIP</th>
+     </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="discovery in discoveries">
+        <td>{{discovery.tofinoid}}</td>
+        <td>{{discovery.hostname}}</td>
+        <td>{{discovery.startip}}</td>
+        <td>{{discovery.endip}}</td>
+    </tr>
+    </tbody>
+</table>
+<a class="btn btn-primary" href="#/listAll">Show All Discovered Device</a>
+</body>
+</html>
